@@ -68,7 +68,18 @@ Global Styles
 }
 body {
   font-family: "Josefin Sans", sans-serif !important;
-  background: var(--clr-grey-10);
+  background: #cb2d3e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ef473a,
+    #cb2d3e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ef473a,
+    #cb2d3e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
@@ -235,6 +246,7 @@ Grocery List
   color: var(--clr-grey-5);
 }
 .submit-btn {
+  font-family: "Josefin Sans", sans-serif !important;
   background: var(--clr-primary-8);
   border-color: transparent;
   flex: 0 0 5rem;
@@ -309,6 +321,7 @@ Grocery List
 }
 .clear-btn {
   text-transform: capitalize;
+  font-family: "Josefin Sans", sans-serif !important;
   width: 10rem;
   height: 1.5rem;
   display: grid;
